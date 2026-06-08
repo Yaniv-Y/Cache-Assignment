@@ -1,0 +1,23 @@
+@Cache_Assignment_HostAddress = http://localhost:5049
+
+POST {{Cache_Assignment_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+}
+
+###
+
+PUT {{Cache_Assignment_HostAddress}}/api/products/4
+Content-Type: application/json
+
+{
+  "id": 4
+}
+
+###
+
+GET {{Cache_Assignment_HostAddress}}/api/products/4
+Accept: application/json
+
+###
